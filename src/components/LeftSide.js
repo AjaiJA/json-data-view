@@ -5,8 +5,11 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import StarView from './StarView';
 import Avatar from '@material-ui/core/Avatar';
 import AvatarImage from './../images/avatar.png';
+import {useStyles} from './Styles.js'
 
-export default function LeftSide({classes,data}) {
+export default function LeftSide({data}) {
+    const classes = useStyles();
+    
     return (
         <Grid item xs={6} lg={6} sm={12} style={{paddingRight:"27px"}}>
             <Typography className={classes.desc}>
